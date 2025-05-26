@@ -6,7 +6,17 @@ CREATE TABLE books (
     publication_year INT,
     genre VARCHAR(50),
     isbn VARCHAR(20) UNIQUE NOT NULL
+);-- Create Books table
+CREATE TABLE books (
+    book_id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    publication_year INT,
+    genre VARCHAR(50),
+    isbn VARCHAR(20) UNIQUE NOT NULL
 );
+
+
 
 --  Members table
 CREATE TABLE members (
